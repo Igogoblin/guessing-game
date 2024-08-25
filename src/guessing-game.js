@@ -12,6 +12,10 @@ class GuessingGame {
   guess() {
     return Math.round((this.maxValue - this.minValue) / 2);
   }
+
+  lower() {
+    this.maxValue = Math.round((this.maxValue - this.minValue) / 2);
+  }
 }
 
 module.exports = GuessingGame;
